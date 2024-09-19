@@ -1,0 +1,87 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.topbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.topbar nav ul li {
+  margin-left: 20px;
+}
+
+.topbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topbar nav a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 10; /* Ensures the form is on top */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darkens the background */
+  backdrop-filter: blur(5px); /* Applies blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5; /* Behind the form */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10; /* On top of the overlay */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
